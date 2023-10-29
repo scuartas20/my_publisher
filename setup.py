@@ -15,11 +15,13 @@ setup(
     zip_safe=True,
     maintainer='jammy',
     maintainer_email='scuartasm20@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='cmd vel publisher',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'vel_publisher = my_publisher.vel_publisher:main',
+            'odom_subscriber = my_publisher.odom_subscriber:main',
         ],
     },
 )
