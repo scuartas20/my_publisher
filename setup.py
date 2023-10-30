@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'vel_publisher = my_publisher.vel_publisher:main',
             'odom_subscriber = my_publisher.odom_subscriber:main',
+            'control_diff_drive = my_publisher.control_diff_drive:main'
         ],
     },
 )
